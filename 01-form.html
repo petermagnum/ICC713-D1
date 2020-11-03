@@ -1,28 +1,95 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Desafío 1</title>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="01-form.css">
-    </head>
-    <body>
-        <div id="header">
-            <ul class="navbar">
-                <li class="navbar-item active">
-                    <a href="01-form.html">Formulario</a>
-                </li>
-                <li class="navbar-item">
-                    <a href="02-table.html">Tabla</a>
-                </li>
-            </ul>
-        </div>
-        <div class="container">
-            Aquí debe ir el formulario
-        </div>
-        <div id="footer">
-            <small>Noviembre - 2020</small>
-        </div>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="01-form.css">
+</head>
+
+<body>
+    <div id="header">
+        <ul class="nav">
+            <li class="text">
+                <a href="01-form.html">Formulario</a>
+            </li>
+            <li class="text">
+                <a href="02-table.html">Tabla</a>
+            </li>
+        </ul>
+    </div>
+    <h2>FORMULARIO</h2>
+
+
+    <div class="container">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Nombre:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Ingresa tu Nombre Completo">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Email:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Ingresa tu direccion de Correo Electronico">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Telefono:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Ingresa tu numero de telefono">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Fecha de Nacimiento:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="dd-mm-aaaa">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Carrera:</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="australia">Ingenieria Informatica</option>
+                        <option value="canada">Ingenieria Civil Informatica</option>
+                        <option value="usa">Ingenieria Civil Industrial Mencion Informatica</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Año de Ingreso:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Ingresa tu Año de Ingreso">
+                </div>
+            </div>
+           
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <div class="container">
+
+    </div>
+    <div id="footer">
+        <small>Noviembre - 2020</small>
+    </div>
+</body>
+
 </html>
